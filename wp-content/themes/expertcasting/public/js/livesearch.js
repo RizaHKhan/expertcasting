@@ -52,6 +52,7 @@ class Search{
         
         clearTimeout(this.typingTimer)
         
+        
         this.typingTimer = setTimeout(() => {
              console.log('this is a timeout test')
         }, 2000);

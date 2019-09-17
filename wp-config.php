@@ -20,16 +20,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'expertcasting' );
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
-
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+if(file_exists(dirname(__FILE__)) . '/local.php') {
+	define( 'DB_NAME', 'expertcasting' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', '' );
+	define( 'DB_HOST', 'localhost' );
+} else {
+	define( 'DB_NAME', 'themoew5_casting' );
+	define( 'DB_USER', 'themoew5_caster' );
+	define( 'DB_PASSWORD', 'jEjG?D$]7aZ6' );
+	define( 'DB_HOST', 'localhost' );
+}
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
