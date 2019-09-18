@@ -7,6 +7,10 @@
         wp_enqueue_script('animation', get_template_directory_uri() . '/public/js/animation.js', '', '', true);
         wp_enqueue_script('modal', get_template_directory_uri() . '/public/js/modal.js', '', '', true);
         wp_enqueue_script('livesearch', get_template_directory_uri() . '/public/js/livesearch.js', '', '', true);
+        wp_localize_script('livesearch', 'livesearch_data', array(
+            'root_url' => get_site_url(),
+            
+        ));
     }
 
     add_action('wp_enqueue_scripts', 'addingResources');

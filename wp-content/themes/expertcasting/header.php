@@ -28,8 +28,8 @@
     </ul>
 
     <div class="social">
-        <input type="text" class="search delete"><i class="fa fa-search fa-1x"></i>
-        |<a href="http://www.facebook.com/pages/Expert-Casting-Ltd-engraving/130757043661708" target="_blank"><i class="fa fa-facebook"></i></a>
+        <i class="fa fa-search fa-1x"></i>
+        <a href="http://www.facebook.com/pages/Expert-Casting-Ltd-engraving/130757043661708" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="http://www.yelp.ca/biz/expert-casting-ltd-vancouver" target="_blank"><i class="fa fa-yelp"></i></a>
     </div>
   </nav>

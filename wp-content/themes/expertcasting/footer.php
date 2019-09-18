@@ -53,21 +53,17 @@
         <p>&copy; 2019 Expert Casting<p></p>
     </div>
 
-
-
-    
 </div>
 <div class="return"><a href="#"><i class="fa fa-arrow-up fa-2x"></i></a></div>
 
 </div>
 
-
-
 </div>
 
-
-
-
+<div class="modal-search hide">
+     <div class="modal-header"><h3>Search:</h3><input type="text" class="search"></div>
+     <div class="modal-content"></div>
+</div>
 
       <?php wp_footer(); ?>
       </body>

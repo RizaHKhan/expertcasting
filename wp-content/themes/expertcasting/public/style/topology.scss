@@ -406,14 +406,63 @@ figure {
         max-height: 100vh;
         object-fit: cover;
     }
-
 }   
 
-.hide {
+.modal-search {
+    background: rgba(0,0,0,.95);
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 2em;
+    overflow: hidden;
+    display: flex;
+    transition: all .5s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    .modal-header {
+        display: flex;
+        margin: 0 0 2em 0;
+        input {
+            margin-left: 1em;
+            height: 25px;
+            border: none;
+            background: none;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            font-size: 1.2rem;
+            &:focus {
+                outline: none;
+            }
+    } 
+     }
+}
+
+  .hide {
     opacity: 0;
     z-index: -2;
 } 
 
 .delete {
     display: none;
+}
+
+.modal-title {
+    
+    margin-bottom: 1em;
+    
+    p {
+        color: red;
+    }
+  
+}
+
+a {
+    
+    text-decoration: none;
+    color: rgba(255,0,0,.8);
 }
