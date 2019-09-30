@@ -30,7 +30,7 @@ if(file_exists(dirname(__FILE__) . '/local.php')) {
 } else {
 	define( 'DB_NAME', 'themoew5_casting' );
 	define( 'DB_USER', 'themoew5_caster' );
-	define( 'DB_PASSWORD', '@3S3dG;NL^%^' );
+	define( 'DB_PASSWORD', 'QF])irn?cr#d' );
 	define( 'DB_HOST', 'localhost' );
 }
 

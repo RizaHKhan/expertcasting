@@ -12,6 +12,48 @@
 
 </div>
 
+<div class="services">
+
+<h2 id="servicesSection">Services We Offer</h2>
+
+<div class="service-wrapper">
+
+<?php
+$x;
+
+$service = new WP_Query(array(
+    'posts_per_page' => -1,
+    'post_type' => 'service',
+));
+
+if($service -> have_posts()) {
+    while($service -> have_posts()) {
+       $service -> the_post(); ?>
+
+<a href="<?php the_permalink(); ?>">
+
+<div class="service <?php 
+
+    if($x % 2 == 0) {echo 'first';
+} else {
+    echo ''; 
+    }?>
+
+">
+  <div class="service-container">  
+      <h2><?php the_title(); ?></h2>
+      <p> <?php the_excerpt(); ?> </p>
+  </div>
+      <?php the_post_thumbnail(); ?>
+</div>
+</a>
+<?php $x++; }
+} ?>
+
+</div>
+
+</div>
+
 <h2 id="servicesSection">What to expect from us</h2>
 
 <div class="features">
@@ -32,47 +74,7 @@
 
 </div>
 
-<div class="services">
 
-<h2 id="servicesSection">Services We Offer</h2>
-
-<div class="service-wrapper">
-
-<?php
-$x;
-
-$service = new WP_Query(array(
-    'posts_per_page' => -1,
-    'post_type' => 'service'
-));
-
-if($service -> have_posts()) {
-    while($service -> have_posts()) {
-       $service -> the_post();
-        
-        ?>
-
-<div class="service <?php 
-
-    if($x % 2 == 0) {echo 'first';
-} else {
-    echo ''; 
-    }?>
-
-">
-  <div class="service-container">  
-      <h2> <a href="<?php the_permalink();?> "><?php the_title(); ?></a> </h2>
-      <p> <?php the_excerpt(); ?> </p>
-  </div>
-      <?php the_post_thumbnail(); ?>
-</div>
-
-<?php $x++; }
-} ?>
-
-</div>
-
-</div>
 
 <div class="features">
 

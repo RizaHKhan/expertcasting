@@ -23,7 +23,7 @@
   <nav>
     <ul>
       <li id="services"><a href="<?php echo site_url('/service'); ?>">SERVICES</a></li>
-      <li><a href="<?php echo site_url('/price'); ?>">PRICE LIST</a></li>
+      <li><a href="<?php echo site_url('/price'); ?>">PRICING </a></li>
       <li><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">CONTACT</a></li>
     </ul>
 
