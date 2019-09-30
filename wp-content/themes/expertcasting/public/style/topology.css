@@ -38,12 +38,14 @@ html {
   font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .header h1 .email {
   font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .header nav ul {
@@ -149,11 +151,11 @@ html {
 .hero .cta {
   padding: .5em 1.75em;
   border-radius: 5px;
-  background: rgba(67, 51, 44, 0.75);
+  background: rgba(240, 98, 4, 0.973);
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
-  color: #e7e3e3;
+  color: rgba(14, 13, 13, 0.918);
   opacity: .60;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -162,8 +164,7 @@ html {
 }
 
 .hero .cta:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  background: rgba(216, 180, 20, 0.925);
 }
 
 .hero p {
@@ -173,7 +174,7 @@ html {
 }
 
 .footer {
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
   width: 100%;
 }
 
@@ -324,6 +325,12 @@ figure figcaption {
   text-decoration: none;
   color: #fff;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  .return {
+    display: none;
+  }
 }
 
 .modal {

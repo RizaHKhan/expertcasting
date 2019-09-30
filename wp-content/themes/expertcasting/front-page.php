@@ -3,26 +3,23 @@
 
 <div class="hero">
 
-<h1>Vancouver's best equipped casting shop. We can service all your <i>casting</i> needs.</h1>
+  <h1>Vancouver's best equipped casting shop. We can service all your <i>casting</i> needs.</h1>
 
-<div class="right">
-<a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" class="cta">Contact Us</a>
-<p>Our in-house lazer welder helps us provide excellent finishes to all materials. </p>
-</div>
-</div>
+  <div class="right">
+    <a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" class="cta">Contact Us</a>
+    <p>Our in-house laser welder helps us provide excellent finishes to all materials. </p>
+  </div>
 
+</div>
 
 <h2 id="servicesSection">What to expect from us</h2>
 
 <div class="features">
 
-
-
   <?php $promotion = new WP_Query(array(
     'posts_per_page' => -1,
     'post_type' => 'promotion'
   )); 
-  
   
     while($promotion->have_posts()) {
       if($promotion -> have_posts()) {
@@ -34,7 +31,6 @@
     <?php  }}  ?>
 
 </div>
-
 
 <div class="services">
 
@@ -49,7 +45,6 @@ $service = new WP_Query(array(
     'posts_per_page' => -1,
     'post_type' => 'service'
 ));
-
 
 if($service -> have_posts()) {
     while($service -> have_posts()) {
@@ -75,25 +70,17 @@ if($service -> have_posts()) {
 <?php $x++; }
 } ?>
 
-
-
 </div>
 
 </div>
-
-
 
 <div class="features">
-
-
- 
 
   <?php $feature = new WP_Query(array(
     'posts_per_page' => -1,
     'post_type' => 'feature'
   )); 
-  
-  
+    
     while($feature->have_posts()) {
       if($feature -> have_posts()) {
         $feature -> the_post(); ?>

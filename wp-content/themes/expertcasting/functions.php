@@ -62,6 +62,7 @@
     
         register_post_type('price', array(
             'public' => true,
+            'hierarchical' => true,
             'has_archive' => true,
             'show_in_rest' => true,
             'labels' => array(
@@ -72,7 +73,7 @@
                 'singular_name' => 'Price'
             ),
             'menu_icon' => 'dashicons-tag',
-            'supports' => array('title', 'editor', 'excerpt')
+            'supports' => array('title', 'editor', 'excerpt', 'page-attributes')
         ));
     
     
@@ -91,7 +92,6 @@
             'supports' => array('title', 'editor', 'excerpt')
         ));
     
-    
         register_post_type('promotion', array(
             'public' => true,
             'has_archive' => true,
@@ -106,11 +106,6 @@
             'menu_icon' => 'dashicons-flag',
             'supports' => array('title', 'editor', 'excerpt')
         ));
-    
-    
-    
-    
-    
     }
     
     add_action('init', 'init_new_post_types');

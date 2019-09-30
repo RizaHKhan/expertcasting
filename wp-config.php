@@ -22,7 +22,7 @@
 /** The name of the database for WordPress */
 
 
-if(file_exists(dirname(__FILE__)) . '/local.php') {
+if(file_exists(dirname(__FILE__) . '/local.php')) {
 	define( 'DB_NAME', 'expertcasting' );
 	define( 'DB_USER', 'root' );
 	define( 'DB_PASSWORD', '' );

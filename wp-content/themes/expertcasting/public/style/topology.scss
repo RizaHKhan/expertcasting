@@ -40,6 +40,7 @@ html {
     h1 {
         text-align: center;
       .companyname {
+        
         color: #fff;
         font-family: $nameFont;
         font-weight: 900;
@@ -51,18 +52,18 @@ html {
           font-size: 1.3rem;
           color: #fff;
           text-decoration: none;
+          font-weight: 400;
       }
 
       .email {
         font-size: 1.3rem;
         color: #fff;
         text-decoration: none;
+        font-weight: 400;
       }
     }
 
     nav {
-        
-        
         ul {
             justify-content: center;
             li {
@@ -74,9 +75,7 @@ html {
                     font-size: 1rem;
                     
                 }
-                }
-
-         
+                }         
 
             #services:hover {
 
@@ -173,17 +172,17 @@ html {
     .cta {
         padding: .5em 1.75em;
         border-radius: 5px;
-        background: $darkOlive;
+        background: rgba(240, 98, 4, 0.973);
         font-size: 2rem;
         font-family: $nameFont;
         text-decoration: none;
-        color: $textColor;
+        color: rgba(14, 13, 13, 0.918);
         opacity: .60;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         transition: all .5s ease;
         
         &:hover {
-            transform: scale(1.2);
+            background: rgba(216, 180, 20, 0.925);
         }
     }
 
@@ -201,7 +200,7 @@ html {
 
 .footer {
     
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
     width: 100%;
     .footer-name {
         
@@ -378,6 +377,12 @@ figure {
     }
 }
 
+@media (max-width: 800px) {
+    .return {
+        display: none;
+    }
+}
+
 .modal {
     position: fixed;
     z-index: 2;
@@ -457,8 +462,7 @@ figure {
     
     p {
         color: red;
-    }
-  
+    }  
 }
 
 a {
