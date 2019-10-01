@@ -290,50 +290,21 @@ html {
 }
 
 .wpcf7 {
-    background: none;
-       
+    
+    
     form {
-        border: none;
-        padding: 3em 0;
-        //labelsK
+
         p {
 
             .wpcf7-form-control {
-                font-size: 1.2rem;
+                
                 background: none;
                 border: none;
                 border-bottom: solid 5px $rosyBrown;
-                padding: .5em;
-                margin: .5em 0;
+                padding: .5em 0;
                 color: #fff;
             }
-
-            .wpcf7-textarea {
-                width: 100%;
-                
-            }
         }
-
-        //button
-        .wpcf7-submit {
-            
-            font-size: 2.5rem;
-            padding: .5em 3.75em;
-            color: $rosyBrown;
-            background: $darkOlive !important;
-            justify-self: end;
-            border: none;
-            transition: all .5s ease;
-
-            &:hover {
-                background: $rosyBrown;
-                color: $black;
-            }
-        }
-
-
-        
-        
     }
 }
 
@@ -343,8 +314,6 @@ figure {
         
     }
 }
-
-
 
 .single {
     margin: 2em 1em;
