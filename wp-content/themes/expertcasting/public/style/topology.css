@@ -249,44 +249,12 @@ html {
   text-align: center;
 }
 
-.wpcf7 {
-  background: none;
-}
-
-.wpcf7 form {
-  border: none;
-  padding: 3em 0;
-}
-
 .wpcf7 form p .wpcf7-form-control {
-  font-size: 1.2rem;
   background: none;
   border: none;
   border-bottom: solid 5px rgba(161, 142, 119, 0.55);
-  padding: .5em;
-  margin: .5em 0;
+  padding: .5em 0;
   color: #fff;
-}
-
-.wpcf7 form p .wpcf7-textarea {
-  width: 100%;
-}
-
-.wpcf7 form .wpcf7-submit {
-  font-size: 2.5rem;
-  padding: .5em 3.75em;
-  color: rgba(161, 142, 119, 0.55);
-  background: rgba(67, 51, 44, 0.75) !important;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  border: none;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.wpcf7 form .wpcf7-submit:hover {
-  background: rgba(161, 142, 119, 0.55);
-  color: rgba(27, 24, 20, 0.85);
 }
 
 figure figcaption {

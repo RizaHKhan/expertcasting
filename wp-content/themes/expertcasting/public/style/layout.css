@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.container-outter {
+  width: 100%;
+}
+
 .container-inner {
   max-width: 1200px;
   margin: auto;
@@ -62,11 +66,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-}
-
-.header nav ul li {
-  margin-left: 1em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (min-width: 880px) {
@@ -93,6 +95,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .header nav ul li {
+    margin: 0 0 0 0.5em;
   }
   .header nav .social {
     margin-right: 0;
@@ -157,8 +162,8 @@
   padding: 1em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -ms-grid-rows: (300px)[auto-fit];
       grid-template-rows: repeat(auto-fit, 300px);
   -webkit-box-align: center;
@@ -211,7 +216,14 @@
 }
 
 .page {
-  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
 }
 
 .page h1 {
@@ -219,7 +231,6 @@
 }
 
 .contact-content {
-  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +258,10 @@
 
 .service-wrapper .service .service-container {
   padding: 1em;
+}
+
+.service-wrapper .service .service-container a {
+  color: #fff;
 }
 
 .service-wrapper .service .service-container h2 {
@@ -303,8 +318,9 @@
 .price-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-flow: row dense;
   grid-gap: 1em;
   padding: 1em;
 }
