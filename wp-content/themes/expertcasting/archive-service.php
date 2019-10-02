@@ -16,7 +16,7 @@ if(have_posts()) {
         
         ?>
 
-<div class="service <?php 
+<a href="<?php the_permalink();?>" class="service <?php 
 
     if($x % 2 == 0) {echo 'first';
 } else {
@@ -25,11 +25,11 @@ if(have_posts()) {
 
 ">
   <div class="service-container">  
-      <h2> <a href="<?php the_permalink();?> "><?php the_title(); ?></a> </h2>
+      <h2> <?php the_title(); ?> </h2>
       <p> <?php the_excerpt(); ?> </p>
   </div>
       <?php the_post_thumbnail(); ?>
-</div>
+</a>
 
 <?php $x++; }
 } ?>
