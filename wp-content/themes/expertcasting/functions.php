@@ -57,7 +57,7 @@
                 
             ),
             'menu_icon' => 'dashicons-clock',
-            'supports' => array('title', 'editor', 'excerpt')
+            'supports' => array('title', 'editor', 'excerpt', 'page-attributes')
         ));
     
         register_post_type('price', array(
@@ -89,7 +89,7 @@
                 'singular_name' => 'Feature'
             ),
             'menu_icon' => 'dashicons-vault',
-            'supports' => array('title', 'editor', 'excerpt')
+            'supports' => array('title', 'editor', 'excerpt', 'page-attributes')
         ));
     
         register_post_type('promotion', array(
@@ -104,7 +104,7 @@
                 'singular_name' => 'Promotion'
             ),
             'menu_icon' => 'dashicons-flag',
-            'supports' => array('title', 'editor', 'excerpt')
+            'supports' => array('title', 'editor', 'excerpt', 'page-attributes')
         ));
     }
     
