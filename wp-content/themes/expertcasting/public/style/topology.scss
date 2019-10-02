@@ -229,10 +229,12 @@ html {
 
         .directions {
             
-            background: #fff;
+            background: rgba(240, 98, 4, 0.973);
             padding: .25em .75em;
             border-radius: 5px;
             text-decoration: none;
+            color: #fff;
+            transition: all .3s ease-in-out;
             
             &:hover {
                 color: #fff;

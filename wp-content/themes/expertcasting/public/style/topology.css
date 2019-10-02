@@ -198,10 +198,13 @@ html {
 }
 
 .footer .operation .directions {
-  background: #fff;
+  background: rgba(240, 98, 4, 0.973);
   padding: .25em .75em;
   border-radius: 5px;
   text-decoration: none;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .footer .operation .directions:hover {
