@@ -80,6 +80,7 @@
         register_post_type('feature', array(
             'public' => true,
             'has_archive' => true,
+            'hierarchical' => true,
             'show_in_rest' => true,
             'labels' => array(
                 'name' => 'Feature',
@@ -95,6 +96,7 @@
         register_post_type('promotion', array(
             'public' => true,
             'has_archive' => true,
+            'hierarchical' => true,
             'show_in_rest' => true,
             'labels' => array(
                 'name' => 'Promotion',
