@@ -65,6 +65,7 @@
             'hierarchical' => true,
             'has_archive' => true,
             'show_in_rest' => true,
+            'capability_type' => 'page',
             'labels' => array(
                 'name' => 'Price',
                 'add_new_item' => 'Add New Price',
@@ -82,6 +83,7 @@
             'has_archive' => true,
             'hierarchical' => true,
             'show_in_rest' => true,
+            'capability_type' => 'page',
             'labels' => array(
                 'name' => 'Feature',
                 'add_new_item' => 'Add New Feature',
@@ -98,6 +100,7 @@
             'has_archive' => true,
             'hierarchical' => true,
             'show_in_rest' => true,
+            'capability_type' => 'page',
             'labels' => array(
                 'name' => 'Promotion',
                 'add_new_item' => 'Add New Promotion',
