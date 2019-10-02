@@ -56,7 +56,7 @@ if($service -> have_posts()) {
 
 </div>
 
-<h2 id="servicesSection">What to expect from us</h2>
+<h2 id="servicesSection">Why are we the best Casting Company to use for your Jewelry needs?</h2>
 
 <div class="features">
 
