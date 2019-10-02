@@ -2,7 +2,7 @@
     
 
     <div class="footer-name">
-        <h1><a href="#">EXPERT CASTING</a></h1>
+        <h1><a href="<?php echo get_home_url(); ?>">EXPERT CASTING HOME</a></h1>
     </div>
     
     <div class="operation">
