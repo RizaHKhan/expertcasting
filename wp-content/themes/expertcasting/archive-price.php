@@ -12,7 +12,9 @@
     
 
     $pricesPost = new WP_Query(array(
-        'post_type' => 'price'
+        'post_type' => 'price',
+        'orderby' => 'menu_order',
+        'order' => 'asc'
     ));
 
 if($pricesPost -> have_posts()) {
@@ -28,8 +30,6 @@ if($pricesPost -> have_posts()) {
             continue;
         } else {
 
-        
-
         ?>
 
 <div class="price">
@@ -38,7 +38,9 @@ if($pricesPost -> have_posts()) {
                     wp_list_pages(array(
                         'title_li' => NULL,
                         'post_type' => 'price',
-                        'child_of' => get_the_ID()
+                        'child_of' => get_the_ID(),
+                        'sort_column' => 'menu_order',
+                        'sort_order' => 'desc'
 
                     ))
                   ?>
