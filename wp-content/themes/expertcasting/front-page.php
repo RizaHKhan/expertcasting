@@ -24,6 +24,8 @@ $x;
 $service = new WP_Query(array(
     'posts_per_page' => -1,
     'post_type' => 'service',
+    'orderby' => 'menu_order',
+    'order' => 'asc'
 ));
 
 if($service -> have_posts()) {
@@ -60,7 +62,9 @@ if($service -> have_posts()) {
 
   <?php $promotion = new WP_Query(array(
     'posts_per_page' => -1,
-    'post_type' => 'promotion'
+    'post_type' => 'promotion',
+    'orderby' => 'menu_order',
+    'order' => 'asc'
   )); 
   
     while($promotion->have_posts()) {
@@ -80,7 +84,9 @@ if($service -> have_posts()) {
 
   <?php $feature = new WP_Query(array(
     'posts_per_page' => -1,
-    'post_type' => 'feature'
+    'post_type' => 'feature',
+    'orderby' => 'menu_order',
+    'order' => 'asc'
   )); 
     
     while($feature->have_posts()) {
