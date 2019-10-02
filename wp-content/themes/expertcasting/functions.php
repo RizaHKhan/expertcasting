@@ -39,7 +39,7 @@
                 
             ),
             'menu_icon' => 'dashicons-hammer',
-            'supports' => array('title', 'thumbnail', 'editor', 'excerpt')
+            'supports' => array('title', 'thumbnail', 'editor', 'excerpt', 'page-attributes')
         ));
     
         register_post_type('operation', array(
