@@ -272,10 +272,14 @@ figure figcaption {
   margin: .5em 0;
 }
 
-.single .single-content h4 {
+.single .single-content h2 {
   color: rgba(255, 100, 100, 0.7);
-  font-weight: 900;
-  font-size: 1.5rem;
+  margin: .5em 0;
+}
+
+.single .single-content h4 {
+  color: rgba(100, 200, 200, 0.7);
+  margin: .5em 0;
 }
 
 .return {
