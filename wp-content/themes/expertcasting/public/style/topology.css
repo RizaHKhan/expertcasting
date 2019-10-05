@@ -273,12 +273,12 @@ figure figcaption {
 }
 
 .single .single-content h2 {
-  color: rgba(255, 100, 100, 0.7);
+  color: #ff6464;
   margin: .5em 0;
 }
 
 .single .single-content h4 {
-  color: rgba(100, 200, 200, 0.7);
+  color: #64c8c8;
   margin: .5em 0;
 }
 
