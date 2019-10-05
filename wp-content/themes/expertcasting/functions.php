@@ -49,7 +49,7 @@
             'hierarchical' => true,
             'capability_type' => 'page',
             'labels' => array(
-                'name' => 'Operation',
+                'name' => 'Company Hours/Info',
                 'add_new_item' => 'Add New Operation',
                 'edit_item' => 'Edit Operation',
                 'all_items' => 'All Operations',
@@ -85,7 +85,7 @@
             'show_in_rest' => true,
             'capability_type' => 'page',
             'labels' => array(
-                'name' => 'Feature',
+                'name' => 'Out of area/rush tabs',
                 'add_new_item' => 'Add New Feature',
                 'edit_item' => 'Edit Feature',
                 'all_items' => 'All Features',
@@ -102,7 +102,7 @@
             'show_in_rest' => true,
             'capability_type' => 'page',
             'labels' => array(
-                'name' => 'Promotion',
+                'name' => 'Why use us for Casting in Vancouver tabs',
                 'add_new_item' => 'Add New Promotion',
                 'edit_item' => 'Edit Promotion',
                 'all_items' => 'All Promotions',
